@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Careerflow Companion",
+  "version": "1.0.0",
+  "description": "Review and fill your own application fields using your Careerflow profile. Submission stays manual.",
+  "permissions": ["activeTab", "scripting", "storage"],
+  "host_permissions": ["http://localhost:4310/*", "http://127.0.0.1:4310/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Careerflow Companion"
+  }
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Careerflow Companion</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <header>
+      <span>↗</span>
+      <h1>careerflow.</h1>
+    </header>
+    <p>Thoughtful applications, one field at a time.</p>
+    <label
+      >Pairing token<input
+        id="token"
+        type="password"
+        autocomplete="off"
+        placeholder="Paste from Careerflow Settings" /></label
+    ><button id="connect">Connect workspace</button
+    ><label
+      >Application<select id="application">
+        <option value="">Connect to choose an application</option>
+      </select></label
+    ><button id="capture" disabled>Review this form</button>
+    <div id="status" role="status"></div>
+    <div id="decisions"></div>
+    <button id="fill" hidden>Fill reviewed fields</button>
+    <p class="note">
+      Sensitive fields and uploads stay manual. The companion never submits
+      applications.
+    </p>
+    <script src="popup.js"></script>
+  </body>
+</html>
